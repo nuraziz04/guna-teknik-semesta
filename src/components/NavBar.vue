@@ -45,6 +45,7 @@
         {name: 'About Me', href: '#about'},
         {name: 'Product', href: '#product'},
         {name: 'Customers', href: '#customers'},
+        {name: 'Legality', href: '#legality'},
         {name: 'Contact Us', href: '#contact'},
     ])
 
