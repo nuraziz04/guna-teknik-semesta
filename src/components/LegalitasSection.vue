@@ -3,11 +3,11 @@
         <div class="max-w-7xl mx-auto px-6">
             <!-- Title -->
             <div class="text-center mb-16">
-                <h1 class="text-4xl font-bold text-white mb-4">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Legalitas Perusahaan
                 </h1>
 
-                <p class="text-white max-w-2xl mx-auto">
+                <p class="text-gray-900 dark:text-white max-w-2xl mx-auto">
                 Perusahaan kami telah terdaftar secara resmi dan memiliki seluruh izin usaha yang berlaku sesuai dengan regulasi di Indonesia.
                 </p>
             </div>

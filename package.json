@@ -9,16 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.2.1",
+    "@vueuse/core": "^14.2.1",
     "aos": "^2.3.4",
+    "sweetalert2": "^11.26.24",
     "vue": "^3.5.25",
     "vue3-carousel": "^0.17.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
     "@vitejs/plugin-vue": "^6.0.2",
     "autoprefixer": "^10.4.27",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.2.1",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
     "vite": "^7.3.1"
   }
 }

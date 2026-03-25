@@ -1,6 +1,6 @@
 <template>
   <section class="text-white mt-10 scroll-mt-24" id="customers" data-aos="zoom-in">
-    <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">
+    <h2 class="text-4xl font-bold text-gray-900 dark:text-white text-left mb-4 px-4 xl:pl-16">
       Customers
     </h2>
     <div class="px-4 xl:px-16">
@@ -92,7 +92,24 @@
 </script>
 
 <style>
-    .carousel__prev,.carousel__next {
-        color: white !important;
+    .carousel__prev,
+    .carousel__next {
+    color: #1f2937 !important;
+    transition: 0.3s;
+    }
+
+    .carousel__prev:hover,
+    .carousel__next:hover {
+    color: #f97316 !important;
+    }
+
+    .dark .carousel__prev,
+    .dark .carousel__next {
+    color: #ffffff !important;
+    }
+
+    .dark .carousel__prev:hover,
+    .dark .carousel__next:hover {
+    color: #fb923c !important;
     }
 </style>

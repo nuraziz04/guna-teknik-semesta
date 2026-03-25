@@ -9,13 +9,16 @@
       <div class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
         <div class="lg:py-6">
             <div class="text-center lg:text-left">
-                <h1 class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-50 to-green-500">
-                    Guna Teknik Semesta
+                <h1 class="pt-4 font-bold text-4xl md:text-5xl lg:text-6xl">
+                    <span class="text-transparent bg-clip-text 
+                        bg-gradient-to-r 
+                        from-green-600 to-emerald-800
+                        dark:from-green-50 dark:to-green-500">
+                        Guna Teknik Semesta
                     </span>
                 </h1>
             </div>
-            <p class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
+            <p class="text-gray-600 dark:text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Explicabo eius laboriosam ratione corporis tempore facilis,
                 laborum, debitis dolorem accusamus accusantium modi obcaecati?
@@ -63,7 +66,7 @@
                         <div class="download-loader text-white hidden"></div>
                     </div>
 
-                    <a href="/resume.pdf" download="resume.pdf" class="pl-2 text-orange-400">
+                    <a href="/katalog.pdf" download="katalog.pdf" class="pl-2 text-orange-400">
                         Download Katalog
                     </a>
 
@@ -74,16 +77,23 @@
         <div class="lg:h-full md:flex">
             <div class="flex w-full items-center justify-center relative">
                 <!-- Glow Background -->
-                <div class="absolute w-80 h-80 bg-gradient-to-tr from-[#570cac] to-primary blur-3xl opacity-30 rounded-full"></div>
-                <!-- Image Container -->
-                <div class="relative w-72 md:w-[520px] aspect-square bg-transparent overflow-hidden">
-                    <img 
-                        src="@/assets/home-image.png" 
-                        alt="Hero pic"
-                        class="w-full h-full object-contain mix-blend-lighten"
-                    />
+                <div 
+                    class="absolute w-80 h-80 rounded-full blur-3xl opacity-30
+                    bg-gradient-to-tr 
+                    from-purple-400 to-blue-300
+                    dark:from-[#570cac] dark:to-primary">
                 </div>
 
+                <!-- Image Container -->
+                <div class="relative w-72 md:w-[520px] aspect-square overflow-hidden">
+                    <img 
+                    src="@/assets/home-image.png" 
+                    alt="Hero pic"
+                    class="w-full h-full object-contain 
+                    mix-blend-normal 
+                    dark:mix-blend-lighten"
+                    />
+                </div>
             </div>
         </div>
       </div>

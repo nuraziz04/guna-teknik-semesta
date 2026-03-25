@@ -13,21 +13,23 @@
             class="block focus:outline-none"
             @click="isMenuOpen = !isMenuOpen">
                 <span v-if="isMenuOpen" class="text-5xl">
-                    <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="close" width="40">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/delete-sign.png" alt="close" width="40" class="w-8 h-8 hidden dark:block">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/delete-sign.png" alt="close" width="40" class="w-8 h-8 block dark:hidden">
                 </span>
                 <span v-else class="text-5xl">
-                    <img src="https://img.icons8.com/ios-filled/100/ffffff/menu--v6.png" alt="manu" width="40">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/menu--v6.png" alt="manu" width="40" class="w-8 h-8 hidden dark:block">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/menu--v6.png" alt="manu" width="40" class="w-8 h-8 block dark:hidden">
                 </span>
             </button>
         </div>
         <!-- Navbar Link -->
         <nav
-        :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] md:relative md:bg-transparent md:flex md:justify', isMenuOpen ? 'block':'hidden']"
+        :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#F8FAFC] dark:bg-[#111827] md:relative md:bg-transparent md:flex md:justify', isMenuOpen ? 'block':'hidden']"
         >
         <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
             <li v-for="item in menu" :key="item.name">
                 <a :href="item.href" 
-                class="block text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
+                class="block text-[#0f172a] dark:text-white transition hover:text-primary ease-linear text-2xl md:text-lg"
                 @click="scrollToSection(item.href)">
                     {{ item.name }}
                 </a>

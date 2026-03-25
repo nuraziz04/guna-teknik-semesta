@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#111827] min-h-screen">
+  <div class="bg-[#F8FAFC] dark:bg-[#111827] min-h-screen">
     <NavBar/>
     <HomeSection/>
     <AboutSection/>
@@ -13,7 +13,8 @@
 </template>
 
 <script setup>
-  import { defineAsyncComponent } from 'vue';
+  import { defineAsyncComponent, watch } from 'vue'
+  import { useLocalStorage } from '@vueuse/core'
   //import components asynchronous
   const NavBar = defineAsyncComponent(()=>import('@/components/NavBar.vue'))
   const HomeSection = defineAsyncComponent(()=>import('@/components/HomeSection.vue'))
@@ -24,4 +25,11 @@
   const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'))
   const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'))
   const Footer = defineAsyncComponent(()=>import('@/components/FooterSection.vue'))
+
+  // 🌗 global theme
+  const theme = useLocalStorage("theme", "dark")
+
+  watch(theme, (value) => {
+    document.documentElement.classList.toggle("dark", value === "dark")
+  }, { immediate: true })
 </script>
