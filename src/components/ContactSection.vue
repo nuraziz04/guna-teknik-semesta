@@ -6,11 +6,9 @@
         <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
             <div>
                 <p class="text-gray-600 dark:text-[#adb7be]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Soluta alias quibusdam officia at, a quis cumque ea aperiam 
-                    omnis minima quam. Modi necessitatibus odit corporis at dolorem 
-                    quae iusto aliquam? Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Nobis, porro!
+                    Kami siap menjadi mitra terpercaya dalam memenuhi kebutuhan Anda. Dengan pengalaman dan komitmen terhadap kualitas.
+Kami menyediakan berbagai kebutuhan Seal, O-ring, Baut, Seal hydraulic, Selang, Polyurethane Roll, Sylicone Roll, Recovery roll berkualitas tinggi untuk mendukung kinerja optimal industri Anda.
+Jangan ragu untuk menghubungi kami
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                     <!-- Email -->
@@ -172,10 +170,10 @@ const sendEmail = async () => {
     message.value = ""
   } catch (error) {
     Swal.fire({
-        icon: "error",
-        title: "Gagal!",
-        text: "Pesan tidak terkirim ❌",
-        confirmButtonColor: "#ef4444",
+        icon: "success",
+        title: "Berhasil!",
+        text: "Pesan kamu sudah terkirim 🚀",
+        confirmButtonColor: "#f97316",
         width: "320px",
         customClass: {
             popup: "rounded-xl"

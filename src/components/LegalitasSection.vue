@@ -49,31 +49,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Modal Preview -->
-        <div
-        v-if="showModal"
-        class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4"
-        >
-            <div class="bg-white rounded-lg max-w-xl w-full p-6 relative">
-                <button
-                @click="showModal=false"
-                class="absolute right-4 top-4 text-gray-500 hover:text-black text-xl"
-                >
-                ✕
-                </button>
-                <h3 class="text-lg font-semibold mb-4 text-center">
-                {{ selectedDoc.title }}
-                </h3>
-
-                <div class="flex justify-center">
-                    <img
-                    :src="selectedDoc.image"
-                    class="max-h-[400px] w-auto object-contain rounded shadow"
-                    />
-                </div>
-            </div>
-        </div>
     </section>
 </template>
 
@@ -88,23 +63,19 @@ const selectedDoc = ref({})
 const documents = ref([
 {
 title: "Akta Pendirian",
-number: "No.01 Tahun 2020",
-image: "src/assets/ceo-gts.jpg"
+number: "AHU-0049262.AH.01.01.TAHUN 2021",
 },
 {
 title: "NIB",
-number: "9120301234567",
-image: "src/assets/ceo-gts.jpg"
+number: "2405230007018",
 },
 {
 title: "NPWP",
-number: "12.345.678.9-123.000",
-image: "src/assets/ceo-gts.jpg"
+number: "39.031.535.6-439.000",
 },
 {
-title: "SIUP",
-number: "503/123/SIUP",
-image: "src/assets/ceo-gts.jpg"
+title: "PKP",
+number: "S-171/PKP/KPP.221703/2023",
 }
 ])
 

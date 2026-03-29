@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white mt-10 scroll-mt-24" id="about">
+    <section class="text-white mt-10 scroll-mt-14" id="about">
         <div class="px-4 xl:px-16">
             <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
         </div>
@@ -10,13 +10,14 @@
                     History Company
                     </span>
                 </h2>
-                <p class="text-base text-gray-900 dark:text-white lg:text-lg mt-8 py-8">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui facere libero cupiditate fugit minima voluptates numquam
-                    est eos voluptate saepe eius amet harum provident accusamus
-                    omnis sit in cum incidunt dolorum, necessitatibus illo
-                    reiciendis ipsam debitis velit! Itaque officia architecto
-                    fugit, cum dolorum eos dolore quaerat quis nobis id similique!
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-4 leading-snug">
+                    Perkembangan industri makin hari kian berkembang pesat, tak heran apabila saat ini Indonesia memiliki banyak daerah kawasan industri. Ditinjau dari kebutuhan pasar yang meningkat dan persaingan antar produsen yang semakin ketat, maka berimbas pada mesin-mesin produksi yang digunakan oleh perusahaan tak hentinya berjalan. Untuk memenuhi target produksi perusahaan, maka dari itu CV. G.T.S hadir sebagai bagian penunjang kegiatan produksi perusahaan anda khususnya pada bagian sparepart.
+                </p>
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-4 leading-snug">
+                    CV. Guna Teknik Semesta merupakan perusahaan yang bergerak di bidang fabrikasi. Perusahaan ini berdiri pada tahun 2019 yang berlokasi di Cikampek. Awalnya perusahaan ini hanya berfokus pada kegiatan penjualan barang ready saja, namun seiring dengan bertambah banyaknya perusahaan industri, semakin banyak pula kebutuhan sparepart yang diperlukan perusahaan, maka CV. G.T.S hadir memberi solusi bagi perusahaan anda dengan menerima pesanan barang rubber, polyurethane, machining, fabrication, dies & jigs sesuai dengan kebutuhan perusahaan.
+                </p>
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-4 leading-snug">
+                    Melihat Indonesia cukup potensial pada bidang industri maka kami pun siap menjalin kerjasama yang baik dengan perusahaan-perusahaan industri dengan harga kompetitif dan mutu terbaik.
                 </p>
                 <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
                     <div class="text-center rounded-xl bg-[#1a2456] dark:bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
@@ -28,7 +29,7 @@
                         <p class="text-sm sm:text-base text-grey-300">Product</p>
                     </div>
                     <div class="text-center rounded-xl bg-[#1a2456] dark:bg-[#111a3e] shadow-lg border border-[#1f1641] p-3">
-                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+3</h3>
+                        <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">+9</h3>
                         <p class="text-sm sm:text-base text-grey-300"> Years Experience</p>
                     </div>
                 </div>
@@ -40,13 +41,25 @@
                     Visi Misi
                     </span>
                 </h2>
-                <p class="text-base text-gray-900 dark:text-white lg:text-lg mt-8 py-8">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui facere libero cupiditate fugit minima voluptates numquam
-                    est eos voluptate saepe eius amet harum provident accusamus
-                    omnis sit in cum incidunt dolorum, necessitatibus illo
-                    reiciendis ipsam debitis velit! Itaque officia architecto
-                    fugit, cum dolorum eos dolore quaerat quis nobis id similique!
+                <!-- Visi -->
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-4 leading-snug">
+                    Menjadi mitra terpercaya dan terbaik dalam penyediaan kebutuhan sparepart industri dengan kualitas unggul dan harga kompetitif untuk mendukung kebutuhan industri secara berkelanjutan.
+                </p>
+                <!-- Misi -->
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-4 leading-snug">
+                    - Mengutamakan kepuasan pelanggan sebagai prioritas utama
+                </p>
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-2 leading-snug">
+                    - Memberikan pelayanan yang profesional dan responsif
+                </p>
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-2 leading-snug">
+                    - Menjamin kualitas produk sesuai dengan spesifikasi dan kebutuhan pelanggan
+                </p>
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-2 leading-snug">
+                    - Membangun hubungan kerja sama jangka panjang yang saling menguntungkan
+                </p>
+                <p class="text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-2 leading-snug">
+                    - Menyediakan produk dengan ketepatan waktu, jumlah, dan harga yang kompetitif
                 </p>
             </div>
         </div>

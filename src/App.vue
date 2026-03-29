@@ -4,9 +4,11 @@
     <HomeSection/>
     <AboutSection/>
     <ProductSection/>
+    <BrandSection/>
     <CustomerSection/>
     <LegalitasSection/>
     <ContactSection/>
+    <FilosofiSection/>
     <Footer/>
     <BackToTop/>
   </div>
@@ -20,9 +22,11 @@
   const HomeSection = defineAsyncComponent(()=>import('@/components/HomeSection.vue'))
   const AboutSection = defineAsyncComponent(()=>import('@/components/AboutSection.vue'))
   const ProductSection = defineAsyncComponent(()=>import('@/components/ProductSection.vue'))
+  const BrandSection = defineAsyncComponent(()=>import('@/components/BrandSection.vue'))
   const CustomerSection = defineAsyncComponent(()=>import('@/components/CustomerSection.vue'))
   const LegalitasSection = defineAsyncComponent(()=>import('@/components/LegalitasSection.vue'))
   const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'))
+  const FilosofiSection = defineAsyncComponent(()=>import('@/components/FilosofiSection.vue'))
   const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'))
   const Footer = defineAsyncComponent(()=>import('@/components/FooterSection.vue'))
 

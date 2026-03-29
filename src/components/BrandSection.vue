@@ -1,7 +1,7 @@
 <template>
-  <section class="text-white mt-10 scroll-mt-24" id="customers" data-aos="zoom-in">
+  <section class="text-white mt-5" id="customers" data-aos="zoom-in">
     <h2 class="text-4xl font-bold text-gray-900 dark:text-white text-left mb-4 px-4 xl:pl-16">
-      Customers
+      Brands
     </h2>
     <div class="px-4 xl:px-16">
       <Carousel v-bind="settings" :breakpoints="breakpoints">
@@ -9,7 +9,7 @@
             <div class="carousel__item p-4">
                 <div class="w-full mx-auto bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 text-white font-light mb-6">
                     <!-- Image Center -->
-                    <div class="w-full flex justify-center mb-6">
+                    <div class="w-full flex justify-center mb-4">
                         <div class="overflow-hidden w-20 h-20 bg-white rounded-lg flex items-center justify-center">
                             <img 
                             :src="element.image" 
@@ -18,12 +18,6 @@
                             class="w-full h-full object-contain p-2"
                             />
                         </div>
-                    </div>
-                    <!-- Comment -->
-                    <div class="w-full text-center">
-                        <p class="text-sm leading-relaxed">
-                            {{ element.comment }}
-                        </p>
                     </div>
                 </div>
             </div>
@@ -42,52 +36,45 @@
     import 'vue3-carousel/dist/carousel.css'
 
     const settings = ref({
-        itemsToShow: 1,
-        snapAlign: "center",
-        wrapAround: true
+        itemsToShow: 2,
+        snapAlign: "center"
     })
 
     const breakpoints = ref({
-        700:{
-            itemsToShow: 2.5,
-            snapAlign: 'center'
-        },
-        1024:{
-            itemsToShow: 3,
-            snapAlign: 'start'
-        }
+    640: {
+        itemsToShow: 2,
+    },
+    768: {
+        itemsToShow: 3,
+    },
+    1024: {
+        itemsToShow: 4,
+    },
+    1280: {
+        itemsToShow: 5, // 🔥 desktop tampil 5
+    }
     })
 
     const customers = ref([
         {
             id: 1,
-            image: 'src/assets/customers/supreme.webp',
-            comment: 'PT Supreme Paper Solution'
+            image: 'src/assets/brand/parker.png'
         },
         {
             id: 2,
-            image: 'src/assets/customers/gbh.png',
-            comment: 'PT Graha Bumi Hijau'
+            image: 'src/assets/brand/valqua.png'
         },
         {
             id: 3,
-            image: 'src/assets/customers/morinaga.jpeg',
-            comment: 'PT Kalbe Morinaga Indonesia'
+            image: 'src/assets/brand/nok.jpg'
         },
         {
             id: 4,
-            image: 'src/assets/customers/adw.jpeg',
-            comment: 'PT Summit Adyawinsa Stamping Indonesia'
+            image: 'src/assets/brand/smc.jpg'
         },
         {
             id: 5,
-            image: 'src/assets/customers/bbraun.png',
-            comment: 'PT B-Braun Indonesia'
-        },
-        {
-            id: 6,
-            image: 'src/assets/customers/japfa.png',
-            comment: 'PT Japfa Comfeed Indonesia'
+            image: 'src/assets/brand/hallite.png'
         }
     ])
 </script>

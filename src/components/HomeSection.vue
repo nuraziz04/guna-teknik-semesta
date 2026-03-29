@@ -19,11 +19,7 @@
                 </h1>
             </div>
             <p class="text-gray-600 dark:text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Explicabo eius laboriosam ratione corporis tempore facilis,
-                laborum, debitis dolorem accusamus accusantium modi obcaecati?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Mollitia corporis unde maxime error vel? Iste distinctio aperiam, asperiores delectus optio rem adipisci, eaque fuga odio ipsum, illo expedita inventore ex!
+                Perkembangan industri makin hari kian berkembang pesat, tak heran apabila saat ini Indonesia memiliki banyak daerah kawasan industri. Ditinjau dari kebutuhan pasar yang meningkat dan persaingan antar produsen yang semakin ketat, maka berimbas pada mesin-mesin produksi yang digunakan oleh perusahaan tak hentinya berjalan. Untuk memenuhi target produksi perusahaan, maka dari itu CV. G.T.S hadir sebagai bagian penunjang kegiatan produksi perusahaan anda khususnya pada bagian sparepart...
             </p>
 
             <div class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
