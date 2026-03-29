@@ -45,22 +45,22 @@
         itemsToShow: 1,
         itemsToScroll: 1,
         snapAlign: "start",
-        wrapAround: false,
-        clamp: true,
-        transition: 300,
+        wrapAround: true,
+        transition: 400,
         mouseDrag: true,
         touchDrag: true
     })
 
     const breakpoints = ref({
         640: {
-            itemsToShow: 1
+            itemsToShow: 1.2,
+            snapAlign: "start"
         },
         768: {
-            itemsToShow: 2
+            itemsToShow: 2,
         },
         1024: {
-            itemsToShow: 3
+            itemsToShow: 3,
         }
     })
 
@@ -137,9 +137,5 @@
 
     .carousel {
     touch-action: pan-y;
-    }
-
-    .carousel__viewport {
-    overflow-x: hidden;
     }
 </style>
