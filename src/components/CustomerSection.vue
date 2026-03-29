@@ -4,69 +4,59 @@
       Customers
     </h2>
     <div class="px-4 xl:px-16">
-      <Carousel v-bind="settings" :breakpoints="breakpoints">
-        <Slide v-for="element in customers" :key="'customer-' + element.id">
-            <div class="carousel__item p-4">
-                <div class="w-full mx-auto bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 text-white font-light mb-6">
-                    <!-- Image Center -->
-                    <div class="w-full flex justify-center mb-6">
-                        <div class="overflow-hidden w-20 h-20 bg-white rounded-lg flex items-center justify-center">
-                            <img 
-                            :src="element.image" 
-                            alt="partner logo" 
-                            loading="lazy"
-                            class="w-full h-full object-contain p-2"
-                            />
-                        </div>
-                    </div>
-                    <!-- Comment -->
-                    <div class="w-full text-center">
-                        <p class="text-sm leading-relaxed">
-                            {{ element.comment }}
-                        </p>
+        <Swiper
+        :modules="[Navigation, Autoplay]"
+        :slides-per-view="1"
+        :space-between="16"
+        :loop="true"
+        :speed="500"
+        :autoplay="{ delay: 2500, disableOnInteraction: false }"
+        navigation
+        :breakpoints="{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        }"
+        >
+            <SwiperSlide v-for="element in customers" :key="'customer-' + element.id">
+            <div class="p-4">
+                <div class="w-full mx-auto bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 text-white font-light mb-6 rounded-xl">
+                
+                <!-- Image -->
+                <div class="w-full flex justify-center mb-6">
+                    <div class="overflow-hidden w-20 h-20 bg-white rounded-lg flex items-center justify-center">
+                    <img 
+                        :src="element.image" 
+                        alt="partner logo"
+                        loading="lazy"
+                        class="w-full h-full object-contain p-2"
+                    />
                     </div>
                 </div>
+
+                <!-- Comment -->
+                <div class="w-full text-center">
+                    <p class="text-sm leading-relaxed">
+                    {{ element.comment }}
+                    </p>
+                </div>
+
+                </div>
             </div>
-        </Slide>
-        <template #addons>
-            <Navigation/>
-        </template>
-      </Carousel>
+            </SwiperSlide>
+        </Swiper>
     </div>
   </section>
 </template>
 
 <script setup>
     import { ref } from 'vue';
-    import {Carousel, Navigation, Slide} from 'vue3-carousel'
-    import 'vue3-carousel/dist/carousel.css'
 
-    const settings = ref({
-        itemsToShow: 1,
-        itemsToScroll: 1,
-        snapAlign: "center",
-        wrapAround: true,
-        transition: 500,
-        easing: "ease",
-        mouseDrag: true,
-        touchDrag: true,
-        clamp: true
-    })
+    import { Swiper, SwiperSlide } from 'swiper/vue'
+    import { Navigation, Autoplay } from 'swiper/modules'
 
-    const breakpoints = ref({
-        640: {
-            itemsToShow: 1,
-            itemsToScroll: 1,
-        },
-        768: {
-            itemsToShow: 2,
-            itemsToScroll: 1,
-        },
-        1024: {
-            itemsToShow: 3,
-            itemsToScroll: 1,
-        }
-    })
+    import 'swiper/css'
+    import 'swiper/css/navigation'
 
     const customers = ref([
         {
@@ -118,36 +108,28 @@
 </script>
 
 <style>
-    .carousel__prev,
-    .carousel__next {
-    color: #1f2937 !important;
+    .swiper-button-prev,
+    .swiper-button-next {
+    color: #1f2937;
     transition: 0.3s;
     }
 
-    .carousel__prev:hover,
-    .carousel__next:hover {
-    color: #f97316 !important;
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+    color: #f97316;
     }
 
-    .dark .carousel__prev,
-    .dark .carousel__next {
-    color: #ffffff !important;
+    .dark .swiper-button-prev,
+    .dark .swiper-button-next {
+    color: #ffffff;
     }
 
-    .dark .carousel__prev:hover,
-    .dark .carousel__next:hover {
-    color: #fb923c !important;
+    .dark .swiper-button-prev:hover,
+    .dark .swiper-button-next:hover {
+    color: #fb923c;
     }
 
-    .carousel {
-    touch-action: pan-y;
-    }
-
-    .carousel__item {
-        padding: 8px;
-    }
-
-    .carousel {
-        overflow: hidden;
+    :root {
+    --swiper-navigation-size: 20px;
     }
 </style>

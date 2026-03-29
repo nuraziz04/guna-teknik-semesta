@@ -4,58 +4,53 @@
       Brands
     </h2>
     <div class="px-4 xl:px-16">
-      <Carousel v-bind="settings" :breakpoints="breakpoints">
-        <Slide v-for="element in customers" :key="element.id">
-            <div class="carousel__item p-4">
-                <div class="w-full mx-auto bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 text-white font-light mb-6">
-                    <!-- Image Center -->
-                    <div class="w-full flex justify-center mb-4">
-                        <div class="overflow-hidden w-20 h-20 bg-white rounded-lg flex items-center justify-center">
-                            <img 
-                            :src="element.image" 
-                            alt="partner logo" 
-                            loading="lazy"
-                            class="w-full h-full object-contain p-2"
-                            />
-                        </div>
+        <Swiper
+        :modules="[Navigation, Autoplay]"
+        :slides-per-view="2"
+        :space-between="16"
+        :loop="true"
+        :speed="500"
+        :autoplay="{ delay: 2000, disableOnInteraction: false }"
+        navigation
+        :breakpoints="{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+            1280: { slidesPerView: 5 }
+        }"
+        >
+            <SwiperSlide
+            v-for="element in customers"
+            :key="'brand-' + element.id"
+            >
+                <div class="p-4">
+                    <div class="w-full mx-auto bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 mb-6 rounded-xl flex justify-center items-center">
+                    
+                    <div class="overflow-hidden w-20 h-20 bg-white rounded-lg flex items-center justify-center">
+                        <img 
+                        :src="element.image" 
+                        alt="brand logo"
+                        loading="lazy"
+                        class="w-full h-full object-contain p-2"
+                        />
+                    </div>
+
                     </div>
                 </div>
-            </div>
-        </Slide>
-        <template #addons>
-            <Navigation/>
-        </template>
-      </Carousel>
+            </SwiperSlide>
+        </Swiper>
     </div>
   </section>
 </template>
 
 <script setup>
     import { ref } from 'vue';
-    import {Carousel, Navigation, Slide} from 'vue3-carousel'
-    import 'vue3-carousel/dist/carousel.css'
+    
+    import { Swiper, SwiperSlide } from 'swiper/vue'
+    import { Navigation, Autoplay } from 'swiper/modules'
+    import 'swiper/css'
+    import 'swiper/css/navigation'
 
-    const settings = ref({
-        itemsToShow: 2,
-        snapAlign: "start",
-        wrapAround: true,
-        transition: 500,
-    })
-
-    const breakpoints = ref({
-        640: {
-            itemsToShow: 2,
-        },
-        768: {
-            itemsToShow: 3,
-        },
-        1024: {
-            itemsToShow: 4,
-        },
-        1280: {
-            itemsToShow: 5,
-        }
-    })
 
     const customers = ref([
         {
@@ -103,24 +98,28 @@
 </script>
 
 <style>
-    .carousel__prev,
-    .carousel__next {
-    color: #1f2937 !important;
+    .swiper-button-prev,
+    .swiper-button-next {
+    color: #1f2937;
     transition: 0.3s;
     }
 
-    .carousel__prev:hover,
-    .carousel__next:hover {
-    color: #f97316 !important;
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+    color: #f97316;
     }
 
-    .dark .carousel__prev,
-    .dark .carousel__next {
-    color: #ffffff !important;
+    .dark .swiper-button-prev,
+    .dark .swiper-button-next {
+    color: #ffffff;
     }
 
-    .dark .carousel__prev:hover,
-    .dark .carousel__next:hover {
-    color: #fb923c !important;
+    .dark .swiper-button-prev:hover,
+    .dark .swiper-button-next:hover {
+    color: #fb923c;
+    }
+
+    :root {
+    --swiper-navigation-size: 20px;
     }
 </style>
