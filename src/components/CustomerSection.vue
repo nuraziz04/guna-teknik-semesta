@@ -43,17 +43,21 @@
 
     const settings = ref({
         itemsToShow: 1,
-        snapAlign: "center",
-        wrapAround: true
+        itemsToScroll: 1,  
+        snapAlign: "start",  
+        wrapAround: true,
+        transition: 600
     })
 
     const breakpoints = ref({
-        700:{
+        700: {
             itemsToShow: 2.5,
-            snapAlign: 'center'
+            itemsToScroll: 1,
+            snapAlign: 'start'
         },
-        1024:{
+        1024: {
             itemsToShow: 3,
+            itemsToScroll: 1,
             snapAlign: 'start'
         }
     })
@@ -88,6 +92,21 @@
             id: 6,
             image: '/customers/japfa.png',
             comment: 'PT Japfa Comfeed Indonesia'
+        },
+        {
+            id: 7,
+            image: '/customers/katalis.webp',
+            comment: 'PT Katalis Sinergi'
+        },
+        {
+            id: 8,
+            image: '/customers/velasto.png',
+            comment: 'PT Velasto Indonesia'
+        },
+        {
+            id: 9,
+            image: '/customers/kici.png',
+            comment: 'PT Kotobukiya Indo Classic Industries'
         }
     ])
 </script>

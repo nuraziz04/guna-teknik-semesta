@@ -23,8 +23,8 @@
                     Kami Memberi Solusi
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm">
-                    CV. Guna Teknik Semesta didirikan pada tahun 2019, kami mempunyai pengalaman yang cukup banyak di dunia teknik. Pendiri perusahaan ini sudah berkecimpung di dunia teknik lebih dari 30 tahun.
-                    CV. Guna Teknik Semesta tidak hanya menjual barang jadi (Ready) tetapi juga menerima pemesanan barang yang sesuai dengan kebutuhan customer.
+                    PT. Guna Teknik Semesta didirikan pada tahun 2019, kami mempunyai pengalaman yang cukup banyak di dunia teknik. Pendiri perusahaan ini sudah berkecimpung di dunia teknik lebih dari 30 tahun.
+                    PT. Guna Teknik Semesta tidak hanya menjual barang jadi (Ready) tetapi juga menerima pemesanan barang yang sesuai dengan kebutuhan customer.
                 </p>
             </div>
 
@@ -33,7 +33,7 @@
                     Kerjasama Berkelanjutan
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm">
-                    CV. G.T.S terus meningkatkan produk dan layanan dari waktu ke waktu tujuan akhir adalah memberikan produk dan jasa yang bernilai tinggi bagi pelanggan. Kami melakukannya secara berkesinambungan dengan selalu memperbaiki proses bisnis yang telah ada.
+                    PT. Guna Teknik Semesta terus meningkatkan produk dan layanan dari waktu ke waktu tujuan akhir adalah memberikan produk dan jasa yang bernilai tinggi bagi pelanggan. Kami melakukannya secara berkesinambungan dengan selalu memperbaiki proses bisnis yang telah ada.
                 </p>
             </div>
 
@@ -42,7 +42,7 @@
                     Menjawab Kebutuhan
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm">
-                    CV. G.T.S memahami bahwa setiap pelanggan
+                    PT. Guna Teknik Semesta memahami bahwa setiap pelanggan
                     membutuhkan solusi yang berbeda. Kami tidak memberikan solusi satu produk untuk semua, namun kami berdiskusi dengan pelanggan untuk memahami dan memberikan solus yang tepat bagi kebutuhan mereka.
                 </p>
             </div>

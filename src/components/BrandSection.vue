@@ -37,22 +37,24 @@
 
     const settings = ref({
         itemsToShow: 2,
-        snapAlign: "center"
+        snapAlign: "start",
+        wrapAround: true,
+        transition: 500,
     })
 
     const breakpoints = ref({
-    640: {
-        itemsToShow: 2,
-    },
-    768: {
-        itemsToShow: 3,
-    },
-    1024: {
-        itemsToShow: 4,
-    },
-    1280: {
-        itemsToShow: 5, // 🔥 desktop tampil 5
-    }
+        640: {
+            itemsToShow: 2,
+        },
+        768: {
+            itemsToShow: 3,
+        },
+        1024: {
+            itemsToShow: 4,
+        },
+        1280: {
+            itemsToShow: 5,
+        }
     })
 
     const customers = ref([
@@ -75,6 +77,27 @@
         {
             id: 5,
             image: '/brand/hallite.png'
+        },
+        {
+            id: 6,
+            image: '/brand/skf.png'
+        }
+        ,
+        {
+            id: 7,
+            image: '/brand/bando.png'
+        },
+        {
+            id: 8,
+            image: '/brand/cho.webp'
+        },
+        {
+            id: 9,
+            image: '/brand/ntn.png'
+        },
+        {
+            id: 10,
+            image: '/brand/tto.png'
         }
     ])
 </script>
