@@ -43,22 +43,24 @@
 
     const settings = ref({
         itemsToShow: 1,
-        itemsToScroll: 1,  
-        snapAlign: "start",  
+        itemsToScroll: 1,
+        snapAlign: "start",
         wrapAround: true,
-        transition: 600
+        transition: 400,
+        mouseDrag: true,
+        touchDrag: true
     })
 
     const breakpoints = ref({
-        700: {
-            itemsToShow: 2.5,
-            itemsToScroll: 1,
-            snapAlign: 'start'
+        640: {
+            itemsToShow: 1.2,
+            snapAlign: "start"
+        },
+        768: {
+            itemsToShow: 2,
         },
         1024: {
             itemsToShow: 3,
-            itemsToScroll: 1,
-            snapAlign: 'start'
         }
     })
 
@@ -131,5 +133,9 @@
     .dark .carousel__prev:hover,
     .dark .carousel__next:hover {
     color: #fb923c !important;
+    }
+
+    .carousel {
+    touch-action: pan-y;
     }
 </style>
