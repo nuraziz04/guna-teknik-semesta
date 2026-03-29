@@ -58,23 +58,23 @@
     const customers = ref([
         {
             id: 1,
-            image: 'src/assets/brand/parker.png'
+            image: '/brand/parker.png'
         },
         {
             id: 2,
-            image: 'src/assets/brand/valqua.png'
+            image: '/brand/valqua.png'
         },
         {
             id: 3,
-            image: 'src/assets/brand/nok.jpg'
+            image: '/brand/nok.jpg'
         },
         {
             id: 4,
-            image: 'src/assets/brand/smc.jpg'
+            image: '/brand/smc.jpg'
         },
         {
             id: 5,
-            image: 'src/assets/brand/hallite.png'
+            image: '/brand/hallite.png'
         }
     ])
 </script>

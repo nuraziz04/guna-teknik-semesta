@@ -61,32 +61,32 @@
     const customers = ref([
         {
             id: 1,
-            image: 'src/assets/customers/supreme.webp',
+            image: '/customers/supreme.webp',
             comment: 'PT Supreme Paper Solution'
         },
         {
             id: 2,
-            image: 'src/assets/customers/gbh.png',
+            image: '/customers/gbh.png',
             comment: 'PT Graha Bumi Hijau'
         },
         {
             id: 3,
-            image: 'src/assets/customers/morinaga.jpeg',
+            image: '/customers/morinaga.jpeg',
             comment: 'PT Kalbe Morinaga Indonesia'
         },
         {
             id: 4,
-            image: 'src/assets/customers/adw.jpeg',
+            image: '/customers/adw.jpeg',
             comment: 'PT Summit Adyawinsa Stamping Indonesia'
         },
         {
             id: 5,
-            image: 'src/assets/customers/bbraun.png',
+            image: '/customers/bbraun.png',
             comment: 'PT B-Braun Indonesia'
         },
         {
             id: 6,
-            image: 'src/assets/customers/japfa.png',
+            image: '/customers/japfa.png',
             comment: 'PT Japfa Comfeed Indonesia'
         }
     ])
