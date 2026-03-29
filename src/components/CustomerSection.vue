@@ -5,7 +5,7 @@
     </h2>
     <div class="px-4 xl:px-16">
       <Carousel v-bind="settings" :breakpoints="breakpoints">
-        <Slide v-for="element in customers" :key="element.id">
+        <Slide v-for="element in customers" :key="'customer-' + element.id">
             <div class="carousel__item p-4">
                 <div class="w-full mx-auto bg-[#111a3e] shadow-lg border border-[#1f1641] p-6 text-white font-light mb-6">
                     <!-- Image Center -->
@@ -44,23 +44,27 @@
     const settings = ref({
         itemsToShow: 1,
         itemsToScroll: 1,
-        snapAlign: "start",
+        snapAlign: "center",
         wrapAround: true,
-        transition: 400,
+        transition: 500,
+        easing: "ease",
         mouseDrag: true,
-        touchDrag: true
+        touchDrag: true,
+        clamp: true
     })
 
     const breakpoints = ref({
         640: {
-            itemsToShow: 1.2,
-            snapAlign: "start"
+            itemsToShow: 1,
+            itemsToScroll: 1,
         },
         768: {
             itemsToShow: 2,
+            itemsToScroll: 1,
         },
         1024: {
             itemsToShow: 3,
+            itemsToScroll: 1,
         }
     })
 
@@ -137,5 +141,13 @@
 
     .carousel {
     touch-action: pan-y;
+    }
+
+    .carousel__item {
+        padding: 8px;
+    }
+
+    .carousel {
+        overflow: hidden;
     }
 </style>
