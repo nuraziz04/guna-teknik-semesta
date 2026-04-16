@@ -71,36 +71,31 @@
         },
         {
             id: 3,
-            image: '/customers/morinaga.jpeg',
-            comment: 'PT Kalbe Morinaga Indonesia'
+            image: '/customers/imc.png',
+            comment: 'PT IMC Tekno Indonesia'
         },
         {
             id: 4,
-            image: '/customers/adw.jpeg',
-            comment: 'PT Summit Adyawinsa Stamping Indonesia'
-        },
-        {
-            id: 5,
             image: '/customers/bbraun.png',
             comment: 'PT B-Braun Indonesia'
         },
         {
-            id: 6,
+            id: 5,
             image: '/customers/japfa.png',
             comment: 'PT Japfa Comfeed Indonesia'
         },
         {
-            id: 7,
+            id: 6,
             image: '/customers/katalis.webp',
             comment: 'PT Katalis Sinergi'
         },
         {
-            id: 8,
+            id: 7,
             image: '/customers/velasto.png',
             comment: 'PT Velasto Indonesia'
         },
         {
-            id: 9,
+            id: 8,
             image: '/customers/kici.png',
             comment: 'PT Kotobukiya Indo Classic Industries'
         }

@@ -13,6 +13,22 @@
       <span v-else>☀️</span>
     </button>
 
+    <!-- 💬 WhatsApp -->
+    <a
+      href="https://wa.me/6282122220016"
+      target="_blank"
+      class="w-12 h-12 rounded-full flex items-center justify-center 
+            bg-green-500 text-white 
+            hover:bg-green-600 hover:scale-110 
+            shadow-lg transition-all duration-300"
+    >
+      <img 
+        src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" 
+        class="w-6 h-6"
+        alt="whatsapp"
+      />
+    </a>
+
     <!-- ⬆ Back To Top -->
     <button
       v-show="isVisible"

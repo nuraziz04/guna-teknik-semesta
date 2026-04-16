@@ -62,7 +62,7 @@
                         <div class="download-loader text-white hidden"></div>
                     </div>
 
-                    <a href="/katalog.pdf" download="katalog.pdf" class="pl-2 text-orange-400">
+                    <a href="/katalog-gts.pdf" download="katalog-gts.pdf" class="pl-2 text-orange-400">
                         Download Katalog
                     </a>
 

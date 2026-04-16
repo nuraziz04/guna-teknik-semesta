@@ -15,11 +15,12 @@
                 flex flex-col items-center text-center transition duration-300 hover:scale-105"
             >
                 <!-- ICON -->
-                <div class="mb-4">
+                <div class="mb-4 w-50 h-50 flex items-center justify-center 
+                            border border-gray-200 dark:border-[#2a2250] bg-white rounded-xl p-3">
                     <img 
                         :src="product.icon" 
                         alt="product icon"
-                        class="w-20 h-20 sm:w-80 sm:h-24 object-contain"
+                        class="w-full h-full object-contain"
                     >
                 </div>
                 <!-- TITLE -->
@@ -113,7 +114,7 @@
                     image: new URL('@/assets/products/Rubber&Polyurethane/Polyurethane - wheel.jpg', import.meta.url).href
                 },
                 {
-                    name: 'Gasket - Polyurethane',
+                    name: 'Roll - Polyurethane',
                     image: new URL('@/assets/products/Rubber&Polyurethane/roll - Polyurethane.webp', import.meta.url).href
                 },
                 {
@@ -132,7 +133,7 @@
         },
         {
             id: 2,
-            icon: new URL('@/assets/products/Hydraulic&Pneumatic/Hydrualic Fitting Types.jpg', import.meta.url).href,
+            icon: new URL('@/assets/products/Hydraulic&Pneumatic/Hydrualic - Fitting.png', import.meta.url).href,
             name: 'Hydraulic & Pneumatic Equipment',
             description: 'Hydraulic & Pneumatic Equipment kami dirancang untuk mendukung sistem industri dengan performa tinggi, presisi, dan keandalan maksimal. Produk ini digunakan untuk menggerakkan, mengontrol, dan mentransmisikan tenaga menggunakan fluida (hidrolik) maupun udara bertekanan (pneumatik)',
 
@@ -147,7 +148,7 @@
                 },
                 {
                     name: 'Fitting - Hydraulic',
-                    image: new URL('@/assets/products/Hydraulic&Pneumatic/Hydrualic Fitting Types.jpg', import.meta.url).href
+                    image: new URL('@/assets/products/Hydraulic&Pneumatic/Hydrualic - Fitting.png', import.meta.url).href
                 },
                 {
                     name: 'Cylinder - Pneumatic',
@@ -155,7 +156,7 @@
                 },
                 {
                     name: 'Fitting - Pneumatic',
-                    image: new URL('@/assets/products/Hydraulic&Pneumatic/Pneumatic - fitting.webp', import.meta.url).href
+                    image: new URL('@/assets/products/Hydraulic&Pneumatic/Pneumatic - fitting.png', import.meta.url).href
                 },
                 {
                     name: 'Hose - Pneumatic',
@@ -165,7 +166,7 @@
         },
         {
             id: 3,
-            icon: new URL('@/assets/products/Machining&Fabrication/gear Machining.jpg', import.meta.url).href,
+            icon: new URL('@/assets/products/Machining&Fabrication/machining fabrication.png', import.meta.url).href,
             name: 'Machining & Fabrication',
             description: 'Dengan tenaga kerja ahli serta didukung oleh mesin yang berteknologi tinggi, kami dapat menghasilkan barang dengan tingkat presisi dan akurasi yang tepat',
 

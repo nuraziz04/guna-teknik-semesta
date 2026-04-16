@@ -1,7 +1,7 @@
 <template>
   <section class="text-white mt-5" id="customers" data-aos="zoom-in">
     <h2 class="text-4xl font-bold text-gray-900 dark:text-white text-left mb-4 px-4 xl:pl-16">
-      Brands
+      Supported Brands
     </h2>
     <div class="px-4 xl:px-16">
         <Swiper
