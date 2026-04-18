@@ -148,7 +148,7 @@
 
             subProducts: [
                 {
-                    name: 'House - Hydraulic',
+                    name: 'Hose - Hydraulic',
                     image: new URL('@/assets/products/Hydraulic&Pneumatic/hydraulic - house.png', import.meta.url).href
                 },
                 {
