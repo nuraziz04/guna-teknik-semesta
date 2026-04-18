@@ -32,8 +32,8 @@
                 {{ product.name }}
                 </h3>
                 <!-- DESCRIPTION -->
-                <p class="mt-3 text-xs lg:text-sm text-gray-700 dark:text-gray-300 mt-4 leading-snug">
-                {{ product.description }}
+                <p v-for="(item, i) in product.description" :key="i" class="mt-2 w-full text-left space-y-1 text-[11px] lg:text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {{ item }}
                 </p>
             </div>
         </div>
@@ -100,9 +100,16 @@
     const products = ref([
         {
             id: 1,
-            icon: new URL('@/assets/products/Rubber&Polyurethane/rubber - oil seal.jpg', import.meta.url).href,
+            icon: new URL('@/assets/products/Rubber&Polyurethane/rubber - oil seal.jpeg', import.meta.url).href,
             name: 'Rubber & Polyurethane',
-            description: 'Rubber & Polyurethane ada beberapa jenis, dan disetiap jenisnya memiliki keunggulan masing-masing, misalnya tahan panas, minyak / oli, gesekan dll',
+            description: [
+                "Terbagi dalam beberapa jenis, fungsi, elastisitas dan fleksibilitas.",
+                "Kami menerima pesanan sesuai dengan permintaan, bentuk, ukuran maupun kekerasan. Seperti :",
+                "1. Material : NBR, EPDM, VITON, SILIKON, PU.",
+                "2. kekerasan / Hardness : A30 - A95.",
+                "3. Warna : sesuai permintaan",
+                "4. Aktualisasi : Oil Seal ( Hydraulic/ Pneumatic / Gearbox), Coupling, Mounting, BeltConveyor, Recovery Roll dan Roda PU dll."          
+            ],
 
             subProducts: [
                 {
@@ -127,7 +134,7 @@
                 },
                 {
                     name: 'Oil Seal - Rubber',
-                    image: new URL('@/assets/products/Rubber&Polyurethane/rubber - oil seal.jpg', import.meta.url).href
+                    image: new URL('@/assets/products/Rubber&Polyurethane/rubber - oil seal.jpeg', import.meta.url).href
                 }
             ]
         },
@@ -135,7 +142,9 @@
             id: 2,
             icon: new URL('@/assets/products/Hydraulic&Pneumatic/Hydrualic - Fitting.png', import.meta.url).href,
             name: 'Hydraulic & Pneumatic Equipment',
-            description: 'Hydraulic & Pneumatic Equipment kami dirancang untuk mendukung sistem industri dengan performa tinggi, presisi, dan keandalan maksimal. Produk ini digunakan untuk menggerakkan, mengontrol, dan mentransmisikan tenaga menggunakan fluida (hidrolik) maupun udara bertekanan (pneumatik)',
+            description: [
+                "Digunakan untuk menggerakan, mengontrol, dan mengalirkan tenaga menggunakan Oli maupun angin. Produk dan Jasa yang kami sediakan :  Oil seal, Press Selang, Pompa, Valve, Fitting, Tubing, Repair / Fabrikasi Cylinder hydraulic & Pneumatic."
+            ],
 
             subProducts: [
                 {
@@ -168,7 +177,9 @@
             id: 3,
             icon: new URL('@/assets/products/Machining&Fabrication/machining fabrication.png', import.meta.url).href,
             name: 'Machining & Fabrication',
-            description: 'Dengan tenaga kerja ahli serta didukung oleh mesin yang berteknologi tinggi, kami dapat menghasilkan barang dengan tingkat presisi dan akurasi yang tepat',
+            description: [
+                "Dengan tenaga kerja ahli serta didukung oleh mesin yang berteknologi tinggi, kami dapat menghasilkan barang dengan tingkat presisi dan akurasi yang tepat."
+            ],
 
             subProducts: [
                 {
@@ -188,12 +199,12 @@
                     image: new URL('@/assets/products/Machining&Fabrication/shaft - Machining.jpg', import.meta.url).href
                 },
                 {
-                    name: 'Milling - Machine',
-                    image: new URL('@/assets/products/Machining&Fabrication/Milling Machine.png', import.meta.url).href
+                    name: 'Gravity Roll Conveyor - Machining',
+                    image: new URL('@/assets/products/Machining&Fabrication/Gravity Roll Conveyor.png', import.meta.url).href
                 },
                 {
-                    name: 'CNC - Machine',
-                    image: new URL('@/assets/products/Machining&Fabrication/cnc.png', import.meta.url).href
+                    name: 'Bushing Fabrikasi - Machine',
+                    image: new URL('@/assets/products/Machining&Fabrication/Bushing Fabrikasi.png', import.meta.url).href
                 }
             ]
         }

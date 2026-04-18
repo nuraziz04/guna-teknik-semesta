@@ -23,8 +23,7 @@
                     Kami Memberi Solusi
                 </h3>
                 <p class="text-gray-600 dark:text-gray-300 text-xs md:text-sm">
-                    PT. Guna Teknik Semesta didirikan pada tahun 2019, kami mempunyai pengalaman yang cukup banyak di dunia teknik. Pendiri perusahaan ini sudah berkecimpung di dunia teknik lebih dari 30 tahun.
-                    PT. Guna Teknik Semesta tidak hanya menjual barang jadi (Ready) tetapi juga menerima pemesanan barang yang sesuai dengan kebutuhan customer.
+                    PT. Guna teknik memiliki pengalaman yang cukup banyak, didukung mesin produksi terkini dan teamwork yang solid kami berkomitmen mengatasi tantangan melalui pelayanan cepat, tepat dan  profesional sebagai solusi kebutuhan pelanggan.
                 </p>
             </div>
 
