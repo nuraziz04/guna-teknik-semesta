@@ -1,6 +1,6 @@
 export const sendTelegramService = async (email, subject, message) => {
-    const BOT_TOKEN = "8758675693:AAEc1ixWneskoqlGS1B5iC_ZE"
-    const CHAT_ID = "7577213529"
+    const BOT_TOKEN = "8758675693:AAEc1ixWneskoqlGS1B5iDquIklHqizC_ZE"
+    const CHAT_ID = "757732529"
 
     const text = `
 📩 New Message Inbox 📩
